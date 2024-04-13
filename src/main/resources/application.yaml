@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: actuator
+
+management:
+  endpoint:
+    env:
+      show-values: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: env, prometheus, health, info, metric
